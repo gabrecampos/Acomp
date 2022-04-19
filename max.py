@@ -7,18 +7,32 @@ def max(v):
     if v[i] > m: #(3)
       m = v[i] #(4)
   return m #(5)
+def main(*args):
+  v = np.random.randint(1,100,100)
 
-v = np.random.randint(1,100,100)
+  s= sorted(v)
+  r=sorted(v, reverse=True)
+  
+  print(v)
+  
+  n1 = ns()
+  m= max(s)
+  n2 = ns ()
 
-s= sorted(v)
-r=sorted(v, reverse=True)
-print(v)
-print(max(v))
-print(s)
-print(r)
+  print(n2-n1)
+  
+  n1 = ns()
+  m= max(v)
+  n2 = ns ()
 
-n1 = ns()
-m= max(v)
-n2 = ns ()
+  print(n2-n1)
+  
+  n1 = ns()
+  m= max(r)
+  n2 = ns ()
 
-print(n2-n1)
+
+  print(n2-n1)
+
+if __name__ == '__main__':
+  main()
