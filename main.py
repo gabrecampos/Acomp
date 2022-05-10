@@ -1,2 +1,2 @@
-import bubble
-bubble.main()
+import quick
+quick.main()
